@@ -40,7 +40,8 @@ public class SeaLocation {
         //Take it further
         //SELECT name FROM locations WHERE numFish >= 30 AND hasShipWreck = true
 
-        List<String> locationNames = locations.stream();
+        List<String> locationNames = locations.stream()
+                .filter()
 
         System.out.println(locationNames);
 
