@@ -23,36 +23,7 @@ public class SeaLocation {
         return name + ", Depth = " + depth;
     }
 
-    public static void main(String[] args) {
-        buildLocations();
 
-        //Write the following SQL calls as functional programming streams
-
-        //Warm-up
-        //SELECT * FROM locations WHERE depth > 300
-
-        List<SeaLocation> deepLocations = locations.stream()
-                .filter( e -> e.depth > 300 )
-                .collect(Collectors.toList());
-
-        System.out.println(deepLocations);
-
-        //Take it further
-        //SELECT name FROM locations WHERE numFish >= 30 AND hasShipWreck = true
-
-        List<String> locationNames = locations.stream()
-                .filter()
-
-        System.out.println(locationNames);
-
-        //Stretcher!
-        //SELECT depth FROM locations WHERE hasShipwreck = true
-        //Then find the average depth of locations with a shipwreck
-
-        double average = locations.stream();
-
-        System.out.println(average);
-    }
 
     public static void buildLocations () {
         locations = new ArrayList<>();
